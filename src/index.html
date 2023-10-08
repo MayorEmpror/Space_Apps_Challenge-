@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <dialog id="remote">
+            <div class="Total_Solar_Eclpse" id="tteclipse" style="color: white;font-weight:bolder; text-align:center; font-size:20px;display:flex;justify-content:center;align-items:flex-end;padding:10px">Total Solar Eclipse</div>
+            <div class="Patrial_Solar_Eclpse" style="color: white;font-weight:bolder; text-align:center; font-size:20px;display:flex;justify-content:center;align-items:flex-end;padding:10px">Partial Solar Eclipse</div>
+            <div class="Lunar_Eclipse" style="color: white;font-weight:bolder; text-align:center; font-size:20px;display:flex;justify-content:center;align-items:flex-end;padding:10px">Lunar Eclipse</div>
+            <div class="earth_domain" style="color: white;font-weight:bolder; text-align:center; font-size:20px;;display:flex;justify-content:center;align-items:flex-end;padding:10px">Earth's Domain</div>
+    </dialog>
+
+   
+
+    <dialog id="Lunar_Info">
+     <h1>Lunar Eclipse</h1>
+     <h3>
+         Lunar eclipses are celestial events that occur when the Earth passes between the Sun and the Moon, causing the Earth's shadow to be cast on the Moon's surface. These events are fascinating astronomical phenomena and have been studied and recorded for centuries. 
+     </h3>
+     <h1>Observation</h1>
+     <h3>
+         Lunar eclipses are safe to observe with the naked eye, unlike solar eclipses, which require protective eyewear.  
+     </h3>
+    
+    </dialog>
+    <dialog id="Solar_Info_Total">
+     <h1> Total Solar Eclipse</h1>
+    
+     <h3>
+        A total solar eclipse is a spectacular astronomical event that occurs when the Moon passes directly between the Earth and the Sun, temporarily blocking out the Sun's light The path of totality is the area on Earth where the total solar eclipse can be observed in its full glory. It is typically quite narrow, ranging from a few kilometers to a few hundred kilometers in width.
+    </h3>
+        <h1>Observation</h1>
+        <h3>
+         Observing a total solar eclipse requires special precautions.
+   
+    </h3>
+  
+      </dialog>
+      <dialog id="Solar_Info_Partial">
+        <h1> Partial Solar Eclipse</h1>
+    
+        <h3>
+            A partial solar eclipse is a celestial event that occurs when only a portion of the Sun is obscured by the Moon as seen from a specific location on Earth. Unlike a total solar eclipse where the Sun is completely covered, during a partial solar eclipse, a fraction of the Sun remains visible.
+        </h3>
+            <h1>Observation</h1>
+           <h3>
+            It's essential to emphasize that observing any phase of a partial solar eclipse without proper eye protection can be harmful to the eyes. 
+       </h3>
+       </h3>
+       
+       </dialog>
+       <dialog id="instructions" >
+        <div class="header">
+            <h1>Instructions</h1>
+         </div>
+         <h3>
+            Welcome to the Progect of the EclipseElites following are Instructions you can follow to get the best experience
+           </h3>
+         <div class="content">
+            <ul>
+                <li>
+                    Click once on the screen for the animation to start, you may do a right or left click, the project may take a few minutes to load 
+                 </li>
+                 <li>
+                     Once you are in the spaceship you can move about, and experience zero gravity  , you may return to the ship using the <b>b key</b> 
+                 </li> 
+    
+                 <li>
+                    For viewing the eclipses,you can press m key which will show a pop Up which will 
+                    contain icons of the respective screens, observe the rotation of the moon and once an eclipse is in season, choose the respective eclipse and press b to return to the spaceship
+                 </li>
+                 <li>
+                    Make sure that you are positioned by clicking on the icons <b>Before the moon takes position</b> you may look at position of the moon from the window of the spaceship
+                 </li>
+             </ul>
+         </div>
+
+
+
+ </dialog>
+
+    <canvas></canvas>
+    <script type="module" src="./script.js"></script>
+    
+      
+  
+    <script>
+        alert("press i for instructions")
+        let hasBeenPressed = false
+        // Get the modal and close button elements
+         document.addEventListener('keydown', function (event) {
+            if (event.key === 'm' || event.key === "m" ) {
+                if (!hasBeenPressed){
+                document.getElementById("remote").showModal();
+                hasBeenPressed = true
+            }
+                else {
+                    hasBeenPressed = false
+                document.getElementById("remote").close();
+
+                }
+            }
+        })
+       
+      
+        let IBeenPressed = false
+        // Get the modal and close button elements
+         document.addEventListener('keydown', function (event) {
+            if (event.key === 'i' || event.key === "i" ) {
+                if (!IBeenPressed){
+                document.getElementById("instructions").showModal();
+                IBeenPressed = true 
+            }
+                else {
+                    IBeenPressed = false
+                document.getElementById("instructions").close();
+
+                }
+            }
+        })
+           
+    </script>
+</body>
+</html>

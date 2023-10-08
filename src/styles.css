@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html,
+body {
+  overflow: none;
+}
+#remote{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(226, 239, 227);
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10%;
+  height: 50%;
+  width: 75%;
+  outline: none;
+  border:none;
+  overflow-y: hidden;
+}
+.Total_Solar_Eclpse , .Patrial_Solar_Eclpse,.Lunar_Eclipse,.earth_domain{
+   width : 33.333%;
+   height : 90%;
+   margin: 10px ;
+  
+}
+
+.Total_Solar_Eclpse{
+  background-image: url("https://people.com/thmb/QRMdJ0VCPeiE6JNwbE59C6dZRhU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(688x126:690x128):format(webp)/solar-eclipse-100323-e7c75a3bdf65482e97c9e216b841dc24.jpg");
+
+  background-position: center;
+}
+.Patrial_Solar_Eclpse{
+  background-image: url("https://c.tadst.com/gfx/1200x675/eclipse-traditions.jpg?1");
+  background-position: center;
+}
+.Lunar_Eclipse{
+  background-image: url("https://thoughtco.com/thmb/rjytZmXScTuAkqIVAA-MppR4YgA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blood-moon-total-lunar-eclipse-april-14-15-2014-487245745-58dfe7865f9b58ef7ed85623.jpg");
+
+  background-position: center;
+}
+.earth_domain{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg");
+ background-position: center;
+ background-size: cover;
+ 
+}
+#Lunar_Info , #Solar_Info_Total,#Solar_Info_Partial{
+  width: 40%;
+  height: 33%;
+  background-color: rgb(177, 181, 238);
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 29%;
+  margin-left : 50%;
+  opacity: 0.5;
+  outline: none;
+  border:none;
+  overflow-y: hidden;
+}
+#instructions{
+  background-color: rgb(226, 239, 227);
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10%;
+  height: 50%;
+  width: 75%;
+  outline: none;
+  border:none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
+}
+.header{
+ margin-left : 40%;
+  height : 10%;
+  width : 100%;
+}
+
+#heading{
+  margin-left: 40% ;
+} 
+.content{
+ margin-left: 10px;
+ margin-top: 10px ;
+ font-size: large;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 50px;
+}
